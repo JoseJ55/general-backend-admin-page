@@ -34,7 +34,6 @@
     font-size: .9rem;
     font-family: var(--main-font);
     color: var(--error-message-color);
-    visibility: hidden;
 }
 
 .form-edit {
@@ -59,7 +58,6 @@
     font-family: var(--main-font);
     font-size: .9rem;
     display: flex;
-    visibility: hidden;
 }
 
 #signup-box-form-passwordInfo-strength-normal {
