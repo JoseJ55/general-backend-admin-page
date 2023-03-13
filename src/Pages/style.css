@@ -1,0 +1,12 @@
+/* This is the main css for styling the main pages and not the components. */
+
+/* Main Login page css */
+#login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background: url('/public/subtle-prism.svg');
+    overflow: hidden;
+}

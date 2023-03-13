@@ -1,0 +1,95 @@
+#login-box {
+    min-width: 40vw;
+    min-height: 50vh;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px 3px;
+    animation: fadeIn 1s ease-in;
+}
+
+#login-box-title {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-color);
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+}
+
+#login-box-form {
+    margin: 2.5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 35vh;
+}
+
+#login-box-form-error {
+    width: 80%;
+    font-size: .9rem;
+    font-family: var(--main-font);
+    color: var(--error-message-color);
+    visibility: hidden;
+}
+
+.form-edit {
+    width: 80%;
+    padding: 2% 2%;
+    margin: 1%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: .9rem;
+    font-family: var(--main-font);
+}
+
+#login-box-form-submit {
+    width: 84%;
+    padding: 1% 2%;
+    margin: 1%;
+    color: var(--secondary-text-color);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: .9rem;
+    font-family: var(--main-font);
+}
+
+#login-box-form-submit:hover {
+    cursor: pointer;
+    background-color: #888;
+    color: white;
+}
+
+#login-box-form-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-top: 3vh;
+    color: var(--main-text-color);
+}
+
+#login-box-form-signup p {
+    margin-right: 1vw;
+    font-size: .9rem;
+    font-family: var(--main-font);
+}
+
+#login-box-form-signup input {
+    background-color: transparent;
+    border: none;
+    color: var(--main-text-color);
+    font-size: .9rem;
+    font-family: var(--main-font);
+}
+
+#login-box-form-signup input:hover {
+    cursor: pointer;
+    color: var(--link-color);
+}

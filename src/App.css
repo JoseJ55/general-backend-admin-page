@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+:root {
+  --main-background-color: rgba(76, 76, 76, 1);
+  --secondary-color: rgba(104, 104, 104, 1);
+  --header-color: rgba(44, 44, 44, 1);
+  --main-text-color: rgba(255, 255, 255, 1);
+  --secondary-text-color: rgba(0, 0, 0, 1);
+  --scroll-bar-color: rgba(255, 255, 255, 1);
+  --link-color: rgb(73, 139, 224);
+  --error-message-color: rgb(255, 71, 71);
+
+  /* These are for the request section of the page. */
+  --request-get: rgba(143, 255, 54, 1);
+  --request-post: rgba(255, 198, 51, 1);
+  --request-patch: rgba(103, 237, 255, 1);
+  --request-delete: rgba(255, 67, 67, 1);
+  --request-info-background: rgba(199, 199, 199, 1);
+  --request-info-title-background-color: rgba(217, 217, 217, 1);
+  --request-success-text-color: rgba(42, 79, 207, 1);
+  --request-error-text-color: rgba(238, 0, 0, 1);
+
+  /* These are for the log sections of the admin page */
+  --log-success-color: rgba(111, 157, 94, 1);
+  --log-error-color: rgba(157, 94, 94, 1);
+  --log-popup-background: rgba(130, 130, 130, 1);
+  --log-popup-secondary-color: rgba(255, 255, 255, 1);
+  --log-popup-success-color: rgba(66, 255, 0, 1);
+  --log-popup-error-color: rgba(255, 66, 0, 1);
+  
+
+  /* These are the graph section */
+  --graph-background: rgba(46, 46, 46, 1);
+  --graph-active-button: rgba(255, 255, 255, 1);
+  --graph-inactive-button: rgba(197, 195, 195, 1);
+  --graph-lower-color: rgba(0, 194, 255, .53);
+  --graph-main-color: rgba(0, 133, 255, 1);
+  --graph-node-color: rgba(0, 133, 255, 1);
+
+  --main-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+body {
+  background-color: var(--main-background-color);
+  overflow-x: hidden;
+  max-width: 100%;
 }
