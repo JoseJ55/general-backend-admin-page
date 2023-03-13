@@ -1,0 +1,133 @@
+#signup-box {
+    min-width: 40vw;
+    min-height: 65vh;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px 3px;
+    animation: fadeIn 1s ease-in;
+}
+
+#signup-box-title {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-color);
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+}
+
+#signup-box-form {
+    margin: 3vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 35vh;
+}
+
+#signup-box-form-error {
+    width: 80%;
+    font-size: .9rem;
+    font-family: var(--main-font);
+    color: var(--error-message-color);
+    visibility: hidden;
+}
+
+.form-edit {
+    width: 80%;
+    padding: 2% 2%;
+    margin: 1%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: .9rem;
+    font-family: var(--main-font);
+}
+
+#signup-box-form-passwordInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 82%;
+}
+
+#signup-box-form-passwordInfo-strength {
+    font-family: var(--main-font);
+    font-size: .9rem;
+    display: flex;
+    visibility: hidden;
+}
+
+#signup-box-form-passwordInfo-strength-normal {
+    color: var(--main-text-color);
+    margin-right: 1vw;
+}
+
+#signup-box-form-passwordInfo-strength-status {
+    color: red;
+}
+
+#signup-box-form-passwordInfo-show {
+    font-family: var(--main-font);
+    font-size: .9rem;
+    display: flex;
+}
+
+#signup-box-form-passwordInfo-show-text {
+    color: var(--main-text-color);
+    margin-right: 1vw;
+}
+
+#signup-box-form-passwordInfo-show {
+    padding: 1%
+}
+
+#signup-box-form-submit-button {
+    width: 84%;
+    padding: 1% 2%;
+    margin: 3% 1%;
+    color: var(--secondary-text-color);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: .9rem;
+    font-family: var(--main-font);
+}
+
+#signup-box-form-submit-button:hover {
+    cursor: pointer;
+    background-color: #888;
+    color: white;
+}
+
+#signup-box-form-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-top: 2vh;
+    color: var(--main-text-color);
+}
+
+#signup-box-form-login p {
+    margin-right: 1vw;
+    font-size: .9rem;
+    font-family: var(--main-font);
+}
+
+#signup-box-form-login-button {
+    background-color: transparent;
+    border: none;
+    color: var(--main-text-color);
+    font-size: .9rem;
+    font-family: var(--main-font);
+}
+
+#signup-box-form-login-button:hover {
+    cursor: pointer;
+    color: var(--link-color);
+}

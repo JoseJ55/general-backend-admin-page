@@ -10,3 +10,14 @@
     background: url('/public/subtle-prism.svg');
     overflow: hidden;
 }
+
+/* Main Sign Up page css */
+#signup-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background: url('/public/subtle-prism.svg');
+    overflow: hidden;
+}
