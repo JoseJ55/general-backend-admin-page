@@ -5,6 +5,6 @@ import SideNavbar from './Reducers/SideNavbar';
 
 export const store = configureStore({
   reducer: {
-    nav: SideNavbar,
+    sidenav: SideNavbar,
   },
 });

@@ -1,5 +1,7 @@
 #sideNav {
     max-width: 15%;
+    /* transform: translateX(-65%); */
+    transition-duration: 1s;
     min-height: 89vh;
     background-color: var(--secondary-color);
 }
@@ -7,9 +9,18 @@
 /* CSS for the navbar when it is closed */
 #sideNav-closed {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    padding: 1vh 1vw;
+    flex-direction: column;
+}
+
+#sideNav-closed-icon-area {
+    width: 88%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6%;
 }
 
 #sideNav-closed-icon {
@@ -21,6 +32,38 @@
     cursor: pointer;
 }
 
+#sideNav-closed-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.sideNav-closed-link {
+    width: 88%;
+    height: 10vh;
+    padding: 0 6%;
+    color: var(--main-text-color);
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.sideNav-closed-link:hover {
+    cursor: pointer;
+    background-color: var(--main-background-color);
+}
+
+.closed-link-icon {
+    width: 88%;
+    font-size: 25px;
+    color: var(--main-text-color);
+    padding: 0 6%;
+    margin: 1vh 0;
+}
+
 /* CSS for the nabar when it is open */
 #sideNav-open {
     display: flex;
@@ -30,15 +73,73 @@
 }
 
 #sideNav-open-icon-area {
-    background-color: red;
-    width: 98%;
+    width: 80%;
+    height: 10vh;
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 1vh 1%;
+    padding: 0 10%;
 }
 
 #sidNav-open-icon {
     font-size: 25px;
     color: var(--main-text-color);
+}
+
+#sidNav-open-icon:hover {
+    cursor: pointer;
+}
+
+#sideNav-open-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sideNav-open-link {
+    width: 88%;
+    height: 10vh;
+    padding: 0 6%;
+    background-color: var(--secondary-color);
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.sideNav-open-link:hover {
+    cursor: pointer;
+    background-color: var(--main-background-color);
+}
+
+/* This is for the icon on the nav */
+.link-icon {
+    font-size: 25px;
+    color: var(--main-text-color);
+    margin: 0 4%
+}
+
+@keyframes fadeIn {
+    0% { 
+        transform: translateX(-10%);
+        opacity: 0; 
+    }
+    100% { 
+        transform: translateX(0%);
+        opacity: 1; 
+    }
+}
+
+@keyframes fadeOut {
+    0% { 
+        transform: translateX(0%);
+        opacity: 1; 
+    }
+    100% { 
+        transform: translateX(-10%);
+        opacity: 0; 
+    }
 }

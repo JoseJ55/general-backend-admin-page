@@ -1,35 +1,61 @@
 import React from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { ImCancelCircle } from 'react-icons/im';
+import { MdOutlineSpaceDashboard } from 'react-icons/md';
+import { AiOutlineApi } from 'react-icons/ai';
 import './SideNav.css';
 
 // Redux
 // eslint-disable-next-line import/no-extraneous-dependencies
-// import { useDispatch } from 'react-redux';
-// import { toggleSideNav } from '../../app/Reducers/SideNavbar';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleSideNav } from '../../app/Reducers/SideNavbar';
 
 function SideNav() {
-//   const dispatch = useDispatch();
-  //   const navToggled = useSelector((state) => state.sidenav.toggled);
+  const navToggled = useSelector((state) => state.sidenav.toggled);
+  const dispatch = useDispatch();
 
   const iconCLicked = () => {
-    // dispatch(toggleSideNav)
+    dispatch(toggleSideNav());
   };
 
   return (
-    <div id="sideNav">
-      <div id="sideNav-closed">
-        <RxHamburgerMenu id="sideNav-closed-icon" onClick={() => iconCLicked()} />
+    <div id="sideNav" style={{ maxWidth: !navToggled ? '15%' : '5%', transform: !navToggled ? 'translateX(0)' : 'translateX(-5%)' }}>
+      <div
+        id="sideNav-closed"
+        style={{ display: !navToggled ? 'none' : 'flex' }}
+      >
+        <div id="sideNav-closed-icon-area">
+          <RxHamburgerMenu id="sideNav-closed-icon" onClick={() => iconCLicked()} style={{ animation: !navToggled ? 'fadeOut 1s ease-in-out' : 'fadeIn 1s ease-in-out' }} />
+        </div>
+
+        <div id="sideNav-closed-links">
+          <div className="sideNav-closed-link">
+            <MdOutlineSpaceDashboard className="closed-link-icon" style={{ animation: !navToggled ? 'fadeOut 1s ease-in-out' : 'fadeIn 1s ease-in-out' }} />
+          </div>
+          <div className="sideNav-closed-link">
+            <AiOutlineApi className="closed-link-icon" style={{ animation: !navToggled ? 'fadeOut 1s ease-in-out' : 'fadeIn 1s ease-in-out' }} />
+          </div>
+        </div>
       </div>
 
-      <div id="sideNav-open">
+      <div
+        id="sideNav-open"
+        style={{ display: navToggled ? 'none' : 'flex' }}
+      >
         <div id="sideNav-open-icon-area">
-          <ImCancelCircle id="sidNav-open-icon" onClick={() => iconCLicked()} />
+          <ImCancelCircle id="sidNav-open-icon" onClick={() => iconCLicked()} style={{ animation: !navToggled ? 'fadeIn 1s ease-in-out' : 'fadeOut 1s ease-in-out' }} />
         </div>
 
         <div id="sideNav-open-links">
-          <input type="button" value="Dashboard" />
-          <input type="button" value="endpoints" />
+          <div className="sideNav-open-link">
+            <MdOutlineSpaceDashboard className="link-icon" />
+            <p style={{ animation: !navToggled ? 'fadeIn 1s ease-in-out' : 'fadeOut 1s ease-in-out' }}>Dashboard</p>
+          </div>
+
+          <div className="sideNav-open-link">
+            <AiOutlineApi className="link-icon" />
+            <p style={{ animation: !navToggled ? 'fadeIn 1s ease-in-out' : 'fadeOut 1s ease-in-out' }}>Endpoint</p>
+          </div>
         </div>
       </div>
     </div>
