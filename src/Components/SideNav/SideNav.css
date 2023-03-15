@@ -1,0 +1,44 @@
+#sideNav {
+    max-width: 15%;
+    min-height: 89vh;
+    background-color: var(--secondary-color);
+}
+
+/* CSS for the navbar when it is closed */
+#sideNav-closed {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1vh 1vw;
+}
+
+#sideNav-closed-icon {
+    font-size: 25px;
+    color: var(--main-text-color);
+}
+
+#sideNav-closed-icon:hover {
+    cursor: pointer;
+}
+
+/* CSS for the nabar when it is open */
+#sideNav-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sideNav-open-icon-area {
+    background-color: red;
+    width: 98%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1vh 1%;
+}
+
+#sidNav-open-icon {
+    font-size: 25px;
+    color: var(--main-text-color);
+}
