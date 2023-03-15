@@ -21,3 +21,10 @@
     background: url('/public/subtle-prism.svg');
     overflow: hidden;
 }
+
+/* Home page css */
+#home-body {
+    display: flex;
+    max-width: 100%;
+    min-height: 89vh;
+}

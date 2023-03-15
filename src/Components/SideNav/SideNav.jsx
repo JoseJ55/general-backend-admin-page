@@ -8,7 +8,7 @@ import './SideNav.css';
 // Redux
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleSideNav } from '../../app/Reducers/SideNavbar';
+import { toggleSideNav, changeTab } from '../../app/Reducers/SideNavbar';
 
 function SideNav() {
   const navToggled = useSelector((state) => state.sidenav.toggled);
@@ -18,8 +18,12 @@ function SideNav() {
     dispatch(toggleSideNav());
   };
 
+  const navigateTo = (location) => {
+    dispatch(changeTab(location));
+  };
+
   return (
-    <div id="sideNav" style={{ maxWidth: !navToggled ? '15%' : '5%', transform: !navToggled ? 'translateX(0)' : 'translateX(-5%)' }}>
+    <div id="sideNav" style={{ minWidth: !navToggled ? '15%' : '5%', transform: !navToggled ? 'translateX(0)' : 'translateX(-5%)' }}>
       <div
         id="sideNav-closed"
         style={{ display: !navToggled ? 'none' : 'flex' }}
@@ -29,11 +33,17 @@ function SideNav() {
         </div>
 
         <div id="sideNav-closed-links">
-          <div className="sideNav-closed-link">
-            <MdOutlineSpaceDashboard className="closed-link-icon" style={{ animation: !navToggled ? 'fadeOut 1s ease-in-out' : 'fadeIn 1s ease-in-out' }} />
+          <div className="sideNav-closed-link" onClick={() => navigateTo('dashboard')} role="presentation">
+            <MdOutlineSpaceDashboard
+              className="closed-link-icon"
+              style={{ animation: !navToggled ? 'fadeOut 1s ease-in-out' : 'fadeIn 1s ease-in-out' }}
+            />
           </div>
-          <div className="sideNav-closed-link">
-            <AiOutlineApi className="closed-link-icon" style={{ animation: !navToggled ? 'fadeOut 1s ease-in-out' : 'fadeIn 1s ease-in-out' }} />
+          <div className="sideNav-closed-link" onClick={() => navigateTo('endpoint')} role="presentation">
+            <AiOutlineApi
+              className="closed-link-icon"
+              style={{ animation: !navToggled ? 'fadeOut 1s ease-in-out' : 'fadeIn 1s ease-in-out' }}
+            />
           </div>
         </div>
       </div>
@@ -47,12 +57,12 @@ function SideNav() {
         </div>
 
         <div id="sideNav-open-links">
-          <div className="sideNav-open-link">
+          <div className="sideNav-open-link" onClick={() => navigateTo('dashboard')} role="presentation">
             <MdOutlineSpaceDashboard className="link-icon" />
             <p style={{ animation: !navToggled ? 'fadeIn 1s ease-in-out' : 'fadeOut 1s ease-in-out' }}>Dashboard</p>
           </div>
 
-          <div className="sideNav-open-link">
+          <div className="sideNav-open-link" onClick={() => navigateTo('endpoint')} role="presentation">
             <AiOutlineApi className="link-icon" />
             <p style={{ animation: !navToggled ? 'fadeIn 1s ease-in-out' : 'fadeOut 1s ease-in-out' }}>Endpoint</p>
           </div>

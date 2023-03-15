@@ -1,5 +1,5 @@
 #sideNav {
-    max-width: 15%;
+    min-width: 15%;
     /* transform: translateX(-65%); */
     transition-duration: 1s;
     min-height: 89vh;
