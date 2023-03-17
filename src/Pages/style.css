@@ -28,3 +28,9 @@
     max-width: 100%;
     min-height: 89vh;
 }
+
+/* Endpoint Section on the home page */
+#endpoints {
+    display: flex;
+    flex: 1;
+}

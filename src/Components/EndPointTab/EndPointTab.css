@@ -1,0 +1,26 @@
+#endpointtab {
+    margin: 3% 0;
+    padding: 5%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    border-radius: 10px;
+
+    border: 2px black solid;
+}
+
+#endpointtab:hover {
+    cursor: pointer;
+}
+
+#endpointtab-name {
+    font-family: var(--main-font);
+    color: var(--secondary-text-color)
+}
+
+#endpointtab-type {
+    font-family: var(--main-font);
+    color: var(--secondary-text-color);
+}

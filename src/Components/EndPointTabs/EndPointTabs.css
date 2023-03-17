@@ -1,0 +1,9 @@
+#endpointtabs {
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2% 0;
+    overflow: auto;
+}
