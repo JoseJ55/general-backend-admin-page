@@ -41,3 +41,9 @@
 #header-user-image:hover {
     cursor: pointer;
 }
+
+#header-user-tab {
+    position: absolute;
+    bottom: 10%;
+    background-color: green;
+}
