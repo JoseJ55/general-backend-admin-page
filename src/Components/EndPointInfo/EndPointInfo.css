@@ -42,8 +42,8 @@
 }
 
 .code-body {
-    /* width: 100%; */
-    background-color: var(--request-info-background);
+    /* background-color: var(--request-info-background); */
+    background-color: whitesmoke;
     padding: 2%;
     border-radius: 10px;
     border: 2px black groove;
