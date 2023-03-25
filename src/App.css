@@ -14,7 +14,7 @@
   --request-post: rgba(255, 198, 51, 1);
   --request-patch: rgba(103, 237, 255, 1);
   --request-delete: rgba(255, 67, 67, 1);
-  --request-info-background: rgba(199, 199, 199, 1);
+  --request-info-background: rgb(135, 135, 135);
   --request-info-title-background-color: rgba(217, 217, 217, 1);
   --request-success-text-color: rgba(42, 79, 207, 1);
   --request-error-text-color: rgba(238, 0, 0, 1);

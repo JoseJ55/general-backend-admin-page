@@ -1,4 +1,153 @@
 #endpointinfo {
+    overflow-x: hidden;
+    overflow-y: auto;
     min-width: 70%;
-    background-color: blue;
+    height: 85vh;
+    background-color: var(--request-info-background);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+/* These are for when no endpoint is selected, they are the default css */
+#endpointinfo-emptyImage {
+    width: 35%;
+    margin: 5% 0;
+}
+
+#endpointinfo-emptyText {
+    font-family: var(--main-font);
+    font-size: 1.1rem;
+    color: var(--main-text-color);
+}
+
+/* These are for the classes since there are not that many */
+.section-header {
+    font-size: 1.1rem;
+    font-family: var(--main-font);
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.section-subheader {
+    font-size: .9rem;
+    font-family: var(--main-font);
+    color: var(--secondary-text-color);
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.code-body {
+    /* width: 100%; */
+    background-color: var(--request-info-background);
+    padding: 2%;
+    border-radius: 10px;
+    border: 2px black groove;
+    margin: 1% 2%;
+}
+
+/* Starting here is the main css for the endpoints */
+
+/* These are for the main header */
+#endpointinfo-header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+    margin: 2% 0;
+}
+
+#endpointinfo-header-name {
+    font-family: var(--main-font);
+    font-size: 1.1rem;
+    color: var(--main-text-color);
+}
+
+#endpointinfo-header-type {
+    font-family: var(--main-font);
+    font-size: 1.1rem;
+}
+
+/* These are for the description */
+#endpointinfo-desc {
+    background-color: var(--request-info-title-background-color);
+    width: 74%;
+    padding: 2% 3%;
+    margin: 2% 0;
+    border-radius: 10px;
+    border: 2px black groove;
+    box-shadow: 0 0 3px;
+    flex-wrap: wrap;
+}
+
+#endpointinfo-desc p {
+    font-family: var(--main-font);
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+}
+
+/* These are for the requirement section */
+#endpointinfo-requirements {
+    background-color: var(--request-info-title-background-color);
+    width: 60%;
+    padding: 2% 3%;
+    margin: 2% 0;
+    border-radius: 10px;
+    border: 2px black groove;
+    box-shadow: 0 0 3px;
+}
+
+#endpointinfo-requirements-arguments {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* These are for the request section */
+#endpointinfo-request {
+    background-color: var(--request-info-title-background-color);
+    width: 60%;
+    padding: 2% 3%;
+    margin: 2% 0;
+    border-radius: 10px;
+    border: 2px black groove;
+    box-shadow: 0 0 3px;
+}
+
+#endpointinfo-request-body {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#request-code-body {
+    margin-top: 1%;
+}
+
+/* These are for the response section */
+#endpointinfo-responses {
+    background-color: var(--request-info-title-background-color);
+    width: 60%;
+    padding: 2% 3%;
+    margin: 2% 0;
+    border-radius: 10px;
+    border: 2px black groove;
+    box-shadow: 0 0 3px;
+}
+
+#endpointinfo-responses-two {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+}
+
+#endpointinfo-responses-four {
+    display: flex;
+    flex-direction: column;
 }
