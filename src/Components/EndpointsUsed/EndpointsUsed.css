@@ -1,4 +1,18 @@
 #endpointused {
-    background-color: green;
-    width: 30%
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#endpointused-title {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: var(--main-font);
+    font-size: .9rem;
+    color: var(--main-text-color)
 }

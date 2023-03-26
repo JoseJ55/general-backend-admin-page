@@ -40,6 +40,17 @@
   --info-box-background: rgb(221, 221, 221);
   --info-header-color: rgb(66, 66, 66);
 
+  /* These are for the pie graph on the dashboard */
+  --pie-color-1: rgb(231, 123, 118);
+  --pie-color-2: rgb(249, 213, 152);
+  --pie-color-3: rgb(138, 231, 132);
+  --pie-color-4: rgb(137, 234, 194);
+  --pie-color-5: rgb(137, 205, 234);
+  --pie-color-6: rgb(137, 174, 234);
+  --pie-color-7: rgb(171, 137, 234);
+  --pie-color-8: rgb(234, 137, 221);
+  --pie-color-9: rgb(216, 137, 234);
+
   --main-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
