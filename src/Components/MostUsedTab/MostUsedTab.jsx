@@ -4,7 +4,10 @@ import './MostUsedTab.css';
 // SHows the endpoint that is most used
 function MostUsedTab() {
   return (
-    <div>MostUsedTab</div>
+    <div id="mostusedtab">
+      <p id="mostusedtab-title">Most used</p>
+      <p id="mostusedtab-content">/first</p>
+    </div>
   );
 }
 
