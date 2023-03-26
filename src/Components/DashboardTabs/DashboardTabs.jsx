@@ -7,7 +7,7 @@ import MostUsedTab from '../MostUsedTab/MostUsedTab';
 // Holds the tabs of info for the endpoints
 function DashboardTabs() {
   return (
-    <div>
+    <div id="dashboardtab">
       <UsedTodayTab />
       <MostUsedTab />
     </div>

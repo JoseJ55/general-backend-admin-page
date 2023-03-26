@@ -39,10 +39,37 @@
     flex: 1;
 }
 
-#Dashboard {
+/* Dashboard section of the home page */
+#dashboard {
+    /* width: 100%; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex: 1;
+    /* flex-direction: column; */
+    padding: 1vh 2%;
+}
+
+#dashboard-section {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     flex: 1;
     flex-direction: column;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px;
+}
+
+#dashboard-data {
+    display: flex;
+    width: 100%;
+    min-height: 48vh;
+}
+
+#dashboard-users {
+    width: 100%;
+    min-height: 38vh;
 }

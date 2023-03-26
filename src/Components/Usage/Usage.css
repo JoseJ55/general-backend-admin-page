@@ -1,0 +1,45 @@
+#usage {
+    /* background-color: red; */
+    width: 48%;
+    height: inherit;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#usage-graph {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 86%;
+    /* margin-bottom: 5%; */
+}
+
+#usage-filters {
+    /* background-color: antiquewhite; */
+    min-height: 11%;
+    width: 94%;
+    padding: 1% 3% 0 3%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.usage-filters-buttons {
+    margin-right: 1%;
+    min-width: 10%;
+    padding: .5% 0;
+    background-color: var(--graph-inactive-button);
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: var(--main-font);
+    font-size: .8rem;
+}
+
+.usage-filters-buttons:hover {
+    cursor: pointer;
+    background-color: var(--graph-active-button);
+}

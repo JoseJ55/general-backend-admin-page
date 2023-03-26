@@ -20,9 +20,9 @@ function Header() {
           role="presentation"
         />
 
-        <div id="header-user-tab">
+        {/* <div id="header-user-tab">
           <ProfileTab />
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,0 +1,6 @@
+#line {
+    background-color: var(--graph-background);
+    font-family: var(--main-font);
+    border-radius: 5px;
+    padding: 0 1%;
+}

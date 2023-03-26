@@ -5,7 +5,9 @@ import './EndpointsUsed.css';
 // Auth, Users, etc)
 function EndpointsUsed() {
   return (
-    <div>EndpointsUsed</div>
+    <div id="endpointused">
+      EndpointsUsed
+    </div>
   );
 }
 

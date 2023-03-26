@@ -6,7 +6,7 @@ import PopupUsers from '../PopupUsers/PopupUsers';
 // Shows both all users and recent users.
 function Users() {
   return (
-    <div>
+    <div id="users">
       <PopupUsers />
     </div>
   );

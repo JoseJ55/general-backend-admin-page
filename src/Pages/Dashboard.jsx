@@ -8,11 +8,19 @@ import Users from '../Components/Users/Users';
 
 function Dashboard() {
   return (
-    <div id="dashborad">
-      <Usage />
-      <DashboardTabs />
-      <EndpointsUsed />
-      <Users />
+    <div id="dashboard">
+      <div id="dashboard-section">
+        <div id="dashboard-data">
+          <Usage />
+          <DashboardTabs />
+          <EndpointsUsed />
+        </div>
+
+        <div id="dashboard-users">
+          <Users />
+        </div>
+
+      </div>
     </div>
   );
 }
